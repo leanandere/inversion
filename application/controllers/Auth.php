@@ -17,7 +17,7 @@ class Auth extends CI_Controller {
 		$datos=array();
 		$this->load->library('form_validation');
 
-		$this->form_validation->set_rules('usuario', 'Usuario', 'required');
+		$this->form_validation->set_rules('usuario', 'Usuario', 'required');  
 		$this->form_validation->set_rules('password', 'Password', 'required');
 
 		if ($this->form_validation->run() == FALSE){

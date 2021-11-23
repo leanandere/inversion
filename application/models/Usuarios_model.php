@@ -33,7 +33,7 @@ class Usuarios_model extends CI_Model{
     }
     public function cambiarpass($usuario_id="",$pass=""){
         $this->db->where("usuario_id",$usuario_id);
-        $this->db->set("password",$pass,false);
+        $this->db->set("password",$pass);
         $this->db->update("usuarios");
     }
     function agregar($nombre="",$email="",$password=""){
